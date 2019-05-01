@@ -1,0 +1,8 @@
+<% if (!user) { %>
+	<p>That didn't work! Please <a href="/login">log in</a>.</p>
+<% } else { %>
+	<p>Hello, <%= user.username %>. Print the database  <a href="/profile">here</a>.</p>
+	<br>
+	<p> Add or remove listing from the database  <a href="/profile">here</a>.</p>
+
+<% } %>
